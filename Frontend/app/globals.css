@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-br from-blue-600 to-purple-600;
+  }
+
+  .gradient-1 {
+   @apply bg-gradient-to-br from-emerald-400 to-lime-500;
+ }
+
+ .gradient-2 {
+   @apply bg-gradient-to-br from-green-500 to-teal-500;
+ }
+
+ .gradient-3 {
+   @apply bg-gradient-to-br from-indigo-500 to-violet-600;
+ }
+
+ .gradient-4 {
+   @apply bg-gradient-to-br from-pink-500 to-purple-700;
+ }
+
+ .gradient-5 {
+   @apply bg-gradient-to-br from-cyan-500 to-blue-700;
+ }
+
+ .gradient-6 {
+   @apply bg-gradient-to-br from-yellow-400 to-orange-500;
+ }
+
+ .gradient-7 {
+   @apply bg-gradient-to-br from-teal-400 to-green-500;
+}
+
+.gradient-8 {
+   @apply bg-gradient-to-br from-lime-400 to-yellow-500;
+}
+
+.gradient-9 {
+   @apply bg-gradient-to-br from-cyan-500 to-teal-600;
+}
+
+.gradient-10 {
+   @apply bg-gradient-to-br from-green-400 to-emerald-600;
+}
+
+.gradient-11 {
+   @apply bg-gradient-to-br from-lime-500 to-emerald-700;
+}
+
+.gradient-12 {
+   @apply bg-gradient-to-br from-gray-700 to-gray-900;
+}
+
+.gradient-13 {
+   @apply bg-gradient-to-br from-gray-600 to-gray-800;
+}
+
+.gradient-14 {
+   @apply bg-gradient-to-br from-gray-500 to-gray-700;
+}
+
+
+.gradient-15 {
+   @apply bg-gradient-to-br from-gray-300 to-gray-500;
+}
+
+.gradient-16 {
+   @apply bg-gradient-to-br from-gray-400 to-gray-600;
+}
+
+
+
+  .gradient-title {
+    @apply gradient font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+  }
+
+  .gradient-title-1 {
+   @apply gradient-1 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-2 {
+   @apply gradient-2 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-3 {
+   @apply gradient-3 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-4 {
+   @apply gradient-4 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-5 {
+   @apply gradient-5 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-6 {
+   @apply gradient-6 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-7 {
+   @apply gradient-7 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-8 {
+   @apply gradient-8 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-9 {
+   @apply gradient-9 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-10 {
+   @apply gradient-10 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-11 {
+   @apply gradient-11 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-12 {
+   @apply gradient-12 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-13 {
+   @apply gradient-13 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-14 {
+   @apply gradient-14 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-15 {
+   @apply gradient-15 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+.gradient-title-16 {
+   @apply gradient-16 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+}
+
+
+}
+
+.hero-image-wrapper {
+  perspective: 1000px;
+}
+
+.hero-image {
+  /* transform: rotateX(20deg) scale(0.9) translateY(-50); */
+  transform: rotateX(15deg) scale(1);
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+}
+
+.hero-image.scrolled {
+  transform: rotateX(0deg) scale(1) translateY(40px);
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add this class */
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes float {
+   0%, 100% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.02);
+   }
+}
+
+.animate-float {
+   animation: float 1.5s ease-in-out infinite;
+}
+
+
+@keyframes border-animation {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+.animate-border::before {
+   content: "";
+   position: absolute;
+   inset: -3px;
+   z-index: -1;
+   border-radius: 12px; /* Ensures rounded corners */
+   background: linear-gradient(45deg, #4f46e5, #ec4899, #06b6d4);
+   background-size: 200% 200%;
+   animation: border-animation 3s infinite linear;
+}
+
+
+
