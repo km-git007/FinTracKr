@@ -68,7 +68,6 @@ public class NotificationService {
                 """, reportContent);
         emailService.sendHtmlEmail(userEmail, subject, body, null, null);
     }
-}
 
 
 
@@ -157,139 +156,6 @@ public class NotificationService {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class DummyLargeFile {
 
     private static final Random random = new Random();
     private static final Map<Integer, String> bigMap = new HashMap<>();
@@ -297,8 +163,8 @@ class DummyLargeFile {
 
     static {
         for (int i = 0; i < 1_000_000; i++) {
-            bigMap.put(i, generateRandomString(5000));
-            bigList.add(generateRandomString(5000));
+            bigMap.put(i, generateRandomString(50000));
+            bigList.add(generateRandomString(50000));
         }
     }
 
@@ -307,8 +173,8 @@ class DummyLargeFile {
         for (int i = 0; i < 10_000; i++) {
             executor.submit(() -> {
                 for (int j = 0; j < 10_000; j++) {
-                    bigList.add(generateRandomString(5000));
-                    bigMap.put(j, generateRandomString(5000));
+                    bigList.add(generateRandomString(50000));
+                    bigMap.put(j, generateRandomString(50000));
                 }
             });
         }
@@ -332,23 +198,191 @@ class DummyLargeFile {
     }
 }
 
-/*
-    ~~~~~~~~~~~~ MASSIVE COMMENT BLOCK TO INCREASE FILE SIZE (1MB) ~~~~~~~~~~~~
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    [ Repeat this text 5000 times ]
-*/
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-class DummyLargeFile1 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile2 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile3 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile4 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile5 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile6 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile7 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile8 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile9 extends com.fintrackr.service.DummyLargeFile {}
-class DummyLargeFile10 extends com.fintrackr.service.DummyLargeFile {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
