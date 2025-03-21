@@ -17,7 +17,6 @@ Whether you need to scan receipts, set budget goals, analyze spending patterns, 
 ✔ **Seamless UI & Navigation** – Built with **React, Redux, React Router, and Material UI** for a modern experience.  
 ✔ **Cloud-Ready & Scalable** – Dockerized deployment for seamless scalability and high availability.  
 
----
 
 ## 🔥 Key Functionalities  
 
@@ -46,8 +45,6 @@ Using **Spring Scheduler**, FinTrackr automates recurring financial reports and 
 - **Expense Reminders:** Alerts notify users of upcoming bills and subscriptions.  
 - **Budget Warnings:** Users are alerted if they exceed spending limits.  
 
----
-
 ## 🛠️ Tech Stack  
 
 ### 📉 **Backend (Spring Boot)**  
@@ -68,53 +65,6 @@ Using **Spring Scheduler**, FinTrackr automates recurring financial reports and 
 - **Zod** – Validates user inputs to ensure data integrity.  
 - **Axios** – Handles secure API communication between frontend and backend.  
 - **Tailwind CSS** – Ensures a sleek and responsive design.  
-
----
-
-## 🛠️ Installation & Setup  
-
-### 🔹 1️⃣ Clone the Repository  
-```sh
- git clone https://github.com/your-username/fintrackr.git
- cd fintrackr
-```
-
-### 🔹 2️⃣ Backend Setup (Spring Boot)  
-Ensure you have **Java 17+** and **Maven** installed.  
-```sh
- cd backend
- mvn clean install
- mvn spring-boot:run
-```
-
-### 🔹 3️⃣ Frontend Setup (React)  
-Ensure you have **Node.js (v18+)** installed.  
-```sh
- cd frontend
- npm install
- npm run dev
-```
-
-### 🔹 4️⃣ Environment Variables  
-Create a `.env` file in both **backend** and **frontend** folders with the required API keys and configuration settings.
-
----
-
-## 🚀 Deployment  
-- **Frontend**: Deployed on **Vercel**.  
-- **Backend**: Deployed on **Render** with **Docker** support for scalability.  
-
----
-
-## 🤝 Contributing  
-We welcome contributions! If you’d like to contribute:  
-1. Fork the repository.  
-2. Create a feature branch (`git checkout -b feature-branch`).  
-3. Commit your changes (`git commit -m "Add new feature"`).  
-4. Push to the branch (`git push origin feature-branch`).  
-5. Open a pull request.  
-
----
 
 ## 📩 Contact  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/kaustavmishra)  
